@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://rfbulxuh3iw7"]
+
+[ext_resource type="Script" uid="uid://bnydfgpbfroa2" path="res://scripts/bullets/rhythm_path.gd" id="1_k0khr"]
+[ext_resource type="Texture2D" uid="uid://e7kx6yyybvji" path="res://assets/images/fight_scene/rhythm_path.png" id="2_k0khr"]
+
+[node name="RhythmPath" type="Area2D" groups=["bullet", "rhythm_path"]]
+collision_mask = 2
+script = ExtResource("1_k0khr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.75, 1.75)
+texture = ExtResource("2_k0khr")

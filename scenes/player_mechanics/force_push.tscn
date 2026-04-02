@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://d31ge6tcqjrur"]
+
+[ext_resource type="Script" uid="uid://d4k4q8ng066oe" path="res://scripts/player_mechanics/force_push.gd" id="1_2v13g"]
+[ext_resource type="PackedScene" uid="uid://cockvlcckqj3c" path="res://scenes/telegraphs/telegraphing_layer.tscn" id="2_0vj1q"]
+[ext_resource type="PackedScene" uid="uid://bg1vlu3blxosn" path="res://scenes/telegraphs/move_force_arrow.tscn" id="3_6vat6"]
+
+[node name="ForcePush" type="CharacterBody2D"]
+script = ExtResource("1_2v13g")
+
+[node name="TelegraphingLayer" parent="." instance=ExtResource("2_0vj1q")]
+
+[node name="MoveForceArrow" parent="TelegraphingLayer" instance=ExtResource("3_6vat6")]

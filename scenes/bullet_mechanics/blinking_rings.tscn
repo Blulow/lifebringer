@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://ogrsyws20rtf"]
+
+[ext_resource type="Script" uid="uid://kskwbgnq1iqq" path="res://scripts/bullet_mechanics/blinking_rings.gd" id="1_mb8uc"]
+[ext_resource type="PackedScene" uid="uid://ctg1qeokf1sc8" path="res://scenes/bullets/bullet_shooter.tscn" id="2_k3oy1"]
+[ext_resource type="PackedScene" uid="uid://bqh51p0hwj3w7" path="res://scenes/telegraphs/warning.tscn" id="3_0yjj5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0yjj5"]
+
+[node name="BlinkingRings" type="Node2D"]
+script = ExtResource("1_mb8uc")
+
+[node name="BulletShooter" parent="." instance=ExtResource("2_k3oy1")]
+
+[node name="Warning" parent="." instance=ExtResource("3_0yjj5")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Warning"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Warning/StaticBody2D"]
+shape = SubResource("CircleShape2D_0yjj5")

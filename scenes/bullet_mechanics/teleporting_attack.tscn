@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://w5wjxl14jj1k"]
+
+[ext_resource type="Script" uid="uid://bnm6mqdp1ye20" path="res://scripts/bullet_mechanics/teleporting_attack.gd" id="1_qpm31"]
+[ext_resource type="PackedScene" uid="uid://ctg1qeokf1sc8" path="res://scenes/bullets/bullet_shooter.tscn" id="2_7pdac"]
+
+[node name="TeleportingAttack" type="Node2D"]
+script = ExtResource("1_qpm31")
+
+[node name="BulletShooter" parent="." instance=ExtResource("2_7pdac")]

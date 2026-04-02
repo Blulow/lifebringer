@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckyyefdhel5ew"]
+
+[ext_resource type="Script" uid="uid://b3q62055osm3k" path="res://scripts/bullets/bullet.gd" id="1_mkf8s"]
+[ext_resource type="Texture2D" uid="uid://ctl8lk5djixmu" path="res://assets/images/fight_scene/bullet.png" id="2_5f1na"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h1aey"]
+radius = 3.0
+
+[node name="Bullet" type="Area2D" groups=["bullet"]]
+collision_mask = 2
+script = ExtResource("1_mkf8s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.425, 0.425)
+texture = ExtResource("2_5f1na")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_h1aey")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

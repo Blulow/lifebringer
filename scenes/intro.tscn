@@ -1,0 +1,165 @@
+[gd_scene load_steps=10 format=3 uid="uid://cc7jf3g6esuvl"]
+
+[ext_resource type="Script" uid="uid://xwvxb552b2gl" path="res://scripts/intro.gd" id="1_0naf5"]
+[ext_resource type="Texture2D" uid="uid://guaf64miuyq2" path="res://assets/images/intro&ending/intro_scene_1.png" id="1_yjqpq"]
+[ext_resource type="FontFile" uid="uid://dummr5547h58d" path="res://assets/fonts/BluFont.ttf" id="2_4bx60"]
+[ext_resource type="Texture2D" uid="uid://cykr4sewubxlr" path="res://assets/images/intro&ending/intro_scene_2.png" id="4_bu1yb"]
+[ext_resource type="Texture2D" uid="uid://cr4qkf1niu5c6" path="res://assets/images/intro&ending/intro_scene_3.png" id="5_t1qkj"]
+[ext_resource type="Texture2D" uid="uid://bpm8pw3vbktbo" path="res://assets/images/intro&ending/intro_scene_4.png" id="6_272cy"]
+[ext_resource type="Texture2D" uid="uid://b8ypd643gaf6n" path="res://assets/images/intro&ending/intro_scene_5.png" id="7_37iue"]
+[ext_resource type="Texture2D" uid="uid://bd2img4o1qif7" path="res://assets/images/fight_scene/arrow_indicator.png" id="8_bu1yb"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_t1qkj"]
+font = ExtResource("2_4bx60")
+font_size = 40
+
+[node name="Intro" type="Node2D"]
+script = ExtResource("1_0naf5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="IntroScene1" type="Node2D" parent="CanvasLayer"]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/IntroScene1"]
+position = Vector2(816, 311)
+texture = ExtResource("1_yjqpq")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/IntroScene1"]
+offset_left = 89.0
+offset_top = 60.0
+offset_right = 489.0
+offset_bottom = 361.0
+theme_override_fonts/normal_font = ExtResource("2_4bx60")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "Deep in the depths of the earth, there lies 3 physics rings. Each holding a part of physics of its own.
+
+[color=ff0]Movement[/color], [color=f0f]Collision[/color], and [color=0ff]Time[/color]. Game physics."
+autowrap_mode = 2
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="IntroScene2" type="Node2D" parent="CanvasLayer"]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/IntroScene2"]
+position = Vector2(816, 311)
+texture = ExtResource("4_bu1yb")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/IntroScene2"]
+offset_left = 89.0
+offset_top = 60.0
+offset_right = 489.0
+offset_bottom = 475.0
+theme_override_fonts/normal_font = ExtResource("2_4bx60")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "One day, a mysterious figure stole it, but died a few minutes later.
+
+[color=red]No one[/color] can wield all rings at the same time.
+
+His death separated the rings, knocking the physics [color=gold]out of place[/color], the world became [wave]unbalanced[/wave]."
+autowrap_mode = 2
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="IntroScene3" type="Node2D" parent="CanvasLayer"]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/IntroScene3"]
+position = Vector2(816, 311)
+scale = Vector2(2, 2)
+texture = ExtResource("5_t1qkj")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/IntroScene3"]
+offset_left = 89.0
+offset_top = 60.0
+offset_right = 489.0
+offset_bottom = 305.0
+theme_override_fonts/normal_font = ExtResource("2_4bx60")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "Old man:
+[shake]I sense it...
+
+This is bad..., I have to tell him...!"
+autowrap_mode = 2
+visible_characters = 0
+visible_ratio = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="IntroScene4" type="Node2D" parent="CanvasLayer"]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/IntroScene4"]
+position = Vector2(816, 311)
+scale = Vector2(2, 2)
+texture = ExtResource("6_272cy")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/IntroScene4"]
+offset_left = 89.0
+offset_top = 60.0
+offset_right = 489.0
+offset_bottom = 305.0
+theme_override_fonts/normal_font = ExtResource("2_4bx60")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "Old man:
+There is no time! Each of them have rhythm! YOU have to go. Fight. You have to do this!"
+autowrap_mode = 2
+visible_characters = 0
+visible_ratio = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="IntroScene5" type="Node2D" parent="CanvasLayer"]
+visible = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="CanvasLayer/IntroScene5"]
+position = Vector2(816, 311)
+scale = Vector2(2, 2)
+texture = ExtResource("7_37iue")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/IntroScene5"]
+position = Vector2(816, 311)
+scale = Vector2(2, 2)
+texture = ExtResource("6_272cy")
+
+[node name="IntroScene6" type="Node2D" parent="CanvasLayer"]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/IntroScene6"]
+position = Vector2(816, 311)
+scale = Vector2(2, 2)
+texture = ExtResource("7_37iue")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/IntroScene6"]
+offset_left = 89.0
+offset_top = 60.0
+offset_right = 489.0
+offset_bottom = 305.0
+theme_override_fonts/normal_font = ExtResource("2_4bx60")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "The old man became a sculpture as a burst of energy rushed through."
+autowrap_mode = 2
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Continue" type="Node2D" parent="CanvasLayer"]
+visible = false
+
+[node name="Arrow" type="Sprite2D" parent="CanvasLayer/Continue"]
+position = Vector2(378, 605)
+rotation = 1.5707964
+scale = Vector2(3.2253342, 3.225334)
+texture = ExtResource("8_bu1yb")
+region_enabled = true
+region_rect = Rect2(0, 0, 15, 21)
+
+[node name="Label" type="Label" parent="CanvasLayer/Continue"]
+offset_left = 23.0
+offset_top = 587.0
+offset_right = 326.0
+offset_bottom = 622.0
+text = "Press Z to Continue"
+label_settings = SubResource("LabelSettings_t1qkj")

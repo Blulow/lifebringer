@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://csngn76xkkqfr"]
+
+[ext_resource type="Script" uid="uid://dswqp7kjj4sbf" path="res://scripts/player_mechanics/grid_snap.gd" id="1_padak"]
+
+[node name="GridSnap" type="CharacterBody2D"]
+script = ExtResource("1_padak")

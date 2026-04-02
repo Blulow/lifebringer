@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd5hisy7r163g"]
+
+[ext_resource type="Script" uid="uid://cuu5tc5u1kfjw" path="res://scripts/bullet_mechanics/level_movement_intro.gd" id="1_yx5jy"]
+[ext_resource type="PackedScene" uid="uid://ctg1qeokf1sc8" path="res://scenes/bullets/bullet_shooter.tscn" id="2_jx74l"]
+
+[node name="LevelMovementIntro" type="Node2D"]
+script = ExtResource("1_yx5jy")
+
+[node name="BulletShooter" parent="." instance=ExtResource("2_jx74l")]

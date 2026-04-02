@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://n083adw3wnpf"]
+
+[ext_resource type="Script" uid="uid://d3ggwwmcawuvh" path="res://scripts/player_mechanics/gravity_switch.gd" id="1_27oew"]
+[ext_resource type="PackedScene" uid="uid://cockvlcckqj3c" path="res://scenes/telegraphs/telegraphing_layer.tscn" id="2_fs1xv"]
+[ext_resource type="PackedScene" uid="uid://bg1vlu3blxosn" path="res://scenes/telegraphs/move_force_arrow.tscn" id="3_fs1xv"]
+[ext_resource type="PackedScene" uid="uid://ck7dlhvgveyuh" path="res://scenes/telegraphs/pulsing_arrow.tscn" id="4_buusx"]
+
+[node name="GravitySwitch" type="CharacterBody2D"]
+script = ExtResource("1_27oew")
+
+[node name="TelegraphingLayer" parent="." instance=ExtResource("2_fs1xv")]
+
+[node name="MoveForceArrow" parent="TelegraphingLayer" instance=ExtResource("3_fs1xv")]
+
+[node name="PulsingArrow" parent="TelegraphingLayer" instance=ExtResource("4_buusx")]

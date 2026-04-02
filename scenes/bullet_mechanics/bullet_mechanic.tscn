@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cj7xpwdx6p0hr"]
+
+[ext_resource type="Script" uid="uid://ca11n8wjp2qx8" path="res://scripts/bullet_mechanics/bullet_mechanic.gd" id="1_cthni"]
+
+[node name="BulletMechanic" type="Node2D"]
+script = ExtResource("1_cthni")

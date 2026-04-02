@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfohys64e5eju"]
+
+[ext_resource type="Script" uid="uid://hecullrq721j" path="res://scripts/bullet_mechanics/collision_offset.gd" id="1_tekxx"]
+
+[node name="CollisionOffset" type="Node2D"]
+script = ExtResource("1_tekxx")

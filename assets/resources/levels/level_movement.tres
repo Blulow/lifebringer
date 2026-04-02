@@ -1,0 +1,199 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=31 format=3 uid="uid://t6782p80jl5"]
+
+[ext_resource type="Script" uid="uid://bk5yhl0j0jr1f" path="res://scripts/levels/level_event.gd" id="1_ca7me"]
+[ext_resource type="Script" uid="uid://d2fpfem87jov3" path="res://scripts/levels/level_data.gd" id="2_4sx2n"]
+[ext_resource type="AudioStream" uid="uid://b2f8npdtj1dfo" path="res://assets/sounds/songs/level_position.ogg" id="3_n8h13"]
+
+[sub_resource type="Resource" id="Resource_2g45k"]
+script = ExtResource("1_ca7me")
+beat = 1
+attack_pattern = "falling_bullets"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_ca7me"]
+script = ExtResource("1_ca7me")
+beat = 13
+event_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_4sx2n"]
+script = ExtResource("1_ca7me")
+beat = 17
+attack_pattern = "teleporting_attack"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_n8h13"]
+script = ExtResource("1_ca7me")
+beat = 17
+attack_type = 1
+attack_pattern = "gravity_switch"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_brgdi"]
+script = ExtResource("1_ca7me")
+beat = 33
+event_type = 1
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_r3pgv"]
+script = ExtResource("1_ca7me")
+beat = 33
+attack_pattern = "movement_sequence"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_hgcuq"]
+script = ExtResource("1_ca7me")
+beat = 41
+attack_type = 1
+attack_pattern = "grid_snap"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_g01ds"]
+script = ExtResource("1_ca7me")
+beat = 49
+event_type = 1
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_46iqc"]
+script = ExtResource("1_ca7me")
+beat = 57
+attack_type = 1
+attack_pattern = "force_push"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_7rur8"]
+script = ExtResource("1_ca7me")
+beat = 65
+event_type = 1
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_c1gph"]
+script = ExtResource("1_ca7me")
+beat = 65
+attack_pattern = "teleporting_attack"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_qs3ix"]
+script = ExtResource("1_ca7me")
+beat = 73
+attack_type = 1
+attack_pattern = "force_push"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_s15sw"]
+script = ExtResource("1_ca7me")
+beat = 81
+event_type = 1
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_h4veu"]
+script = ExtResource("1_ca7me")
+beat = 89
+attack_type = 1
+attack_pattern = "grid_snap"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_jmwjq"]
+script = ExtResource("1_ca7me")
+beat = 97
+attack_pattern = "movement_sequence"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_qxw5c"]
+script = ExtResource("1_ca7me")
+beat = 97
+event_type = 1
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_3u71b"]
+script = ExtResource("1_ca7me")
+beat = 113
+attack_type = 1
+attack_pattern = "force_push"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_owivn"]
+script = ExtResource("1_ca7me")
+beat = 121
+event_type = 1
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_rxsj7"]
+script = ExtResource("1_ca7me")
+beat = 127
+attack_pattern = "raining_attack"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_nfx0s"]
+script = ExtResource("1_ca7me")
+beat = 145
+attack_type = 1
+attack_pattern = "grid_snap"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_2ihte"]
+script = ExtResource("1_ca7me")
+beat = 153
+event_type = 1
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_kd261"]
+script = ExtResource("1_ca7me")
+beat = 153
+event_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_fey2l"]
+script = ExtResource("1_ca7me")
+beat = 157
+attack_pattern = "black_hole"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_1bud5"]
+script = ExtResource("1_ca7me")
+beat = 193
+attack_pattern = "teleporting_attack"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_khkmt"]
+script = ExtResource("1_ca7me")
+beat = 193
+attack_type = 1
+attack_pattern = "gravity_switch"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_ol0ak"]
+script = ExtResource("1_ca7me")
+beat = 201
+event_type = 2
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_6751a"]
+script = ExtResource("1_ca7me")
+beat = 201
+event_type = 2
+attack_type = 1
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[resource]
+script = ExtResource("2_4sx2n")
+song = ExtResource("3_n8h13")
+bpm = 160.0
+events = Array[ExtResource("1_ca7me")]([SubResource("Resource_2g45k"), SubResource("Resource_ca7me"), SubResource("Resource_4sx2n"), SubResource("Resource_n8h13"), SubResource("Resource_brgdi"), SubResource("Resource_r3pgv"), SubResource("Resource_hgcuq"), SubResource("Resource_g01ds"), SubResource("Resource_46iqc"), SubResource("Resource_7rur8"), SubResource("Resource_c1gph"), SubResource("Resource_qs3ix"), SubResource("Resource_s15sw"), SubResource("Resource_h4veu"), SubResource("Resource_jmwjq"), SubResource("Resource_qxw5c"), SubResource("Resource_3u71b"), SubResource("Resource_owivn"), SubResource("Resource_owivn"), SubResource("Resource_rxsj7"), SubResource("Resource_nfx0s"), SubResource("Resource_2ihte"), SubResource("Resource_kd261"), SubResource("Resource_fey2l"), SubResource("Resource_1bud5"), SubResource("Resource_khkmt"), SubResource("Resource_ol0ak"), SubResource("Resource_6751a")])

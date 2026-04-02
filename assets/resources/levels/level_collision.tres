@@ -1,0 +1,226 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=35 format=3 uid="uid://cqcr4i3vcyey1"]
+
+[ext_resource type="Script" uid="uid://bk5yhl0j0jr1f" path="res://scripts/levels/level_event.gd" id="1_42tor"]
+[ext_resource type="Script" uid="uid://d2fpfem87jov3" path="res://scripts/levels/level_data.gd" id="2_5ps0i"]
+[ext_resource type="AudioStream" uid="uid://cwijvyjfo20un" path="res://assets/sounds/songs/level_collision.ogg" id="3_5ct0q"]
+
+[sub_resource type="Resource" id="Resource_42tor"]
+script = ExtResource("1_42tor")
+attack_pattern = "hitbox_shift"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_5ps0i"]
+script = ExtResource("1_42tor")
+beat = 33
+attack_type = 1
+attack_pattern = "shrinking_arena"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_5ct0q"]
+script = ExtResource("1_42tor")
+beat = 65
+event_type = 2
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_nc8yo"]
+script = ExtResource("1_42tor")
+beat = 65
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_wmqfe"]
+script = ExtResource("1_42tor")
+beat = 81
+attack_pattern = "merging_bullets"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_xdgiw"]
+script = ExtResource("1_42tor")
+beat = 89
+attack_type = 1
+attack_pattern = "hitbox_pulse"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_gkv1r"]
+script = ExtResource("1_42tor")
+beat = 97
+event_type = 1
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_fb0wf"]
+script = ExtResource("1_42tor")
+beat = 97
+attack_pattern = "teleporting_attack"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_v2hxu"]
+script = ExtResource("1_42tor")
+beat = 105
+attack_type = 1
+attack_pattern = "hitbox_delay"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_54e8l"]
+script = ExtResource("1_42tor")
+beat = 113
+attack_pattern = "blinking_rings"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_1jyna"]
+script = ExtResource("1_42tor")
+beat = 129
+attack_type = 1
+attack_pattern = "hitbox_pulse"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_im370"]
+script = ExtResource("1_42tor")
+beat = 145
+event_type = 1
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_5q3yt"]
+script = ExtResource("1_42tor")
+beat = 145
+attack_pattern = "merging_bullets"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_ev1ux"]
+script = ExtResource("1_42tor")
+beat = 153
+attack_type = 1
+attack_pattern = "shrinking_arena"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_dhjxk"]
+script = ExtResource("1_42tor")
+beat = 161
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_8ssc4"]
+script = ExtResource("1_42tor")
+beat = 161
+attack_pattern = "teleporting_attack"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_yinos"]
+script = ExtResource("1_42tor")
+beat = 169
+attack_type = 1
+attack_pattern = "shrinking_arena"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_rku25"]
+script = ExtResource("1_42tor")
+beat = 177
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_xk0wn"]
+script = ExtResource("1_42tor")
+beat = 177
+attack_pattern = "hitbox_shift"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_mfphq"]
+script = ExtResource("1_42tor")
+beat = 185
+attack_type = 1
+attack_pattern = "shrinking_arena"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_nb5y8"]
+script = ExtResource("1_42tor")
+beat = 193
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_o2kty"]
+script = ExtResource("1_42tor")
+beat = 193
+attack_pattern = "merging_bullets"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_ysvoc"]
+script = ExtResource("1_42tor")
+beat = 201
+attack_type = 1
+attack_pattern = "shrinking_arena"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_w7h60"]
+script = ExtResource("1_42tor")
+beat = 209
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_7t2oo"]
+script = ExtResource("1_42tor")
+beat = 209
+attack_pattern = "blinking_rings"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_e1us8"]
+script = ExtResource("1_42tor")
+beat = 225
+attack_type = 1
+attack_pattern = "hitbox_delay"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_u4qbj"]
+script = ExtResource("1_42tor")
+beat = 233
+attack_type = 1
+attack_pattern = "hitbox_pulse"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_10hqt"]
+script = ExtResource("1_42tor")
+beat = 241
+event_type = 1
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_favx8"]
+script = ExtResource("1_42tor")
+beat = 241
+attack_pattern = "hitbox_shift"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_veavf"]
+script = ExtResource("1_42tor")
+beat = 249
+event_type = 2
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_ool3a"]
+script = ExtResource("1_42tor")
+beat = 249
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[resource]
+script = ExtResource("2_5ps0i")
+song = ExtResource("3_5ct0q")
+bpm = 180.0
+events = Array[ExtResource("1_42tor")]([SubResource("Resource_42tor"), SubResource("Resource_5ps0i"), SubResource("Resource_5ct0q"), SubResource("Resource_nc8yo"), SubResource("Resource_wmqfe"), SubResource("Resource_xdgiw"), SubResource("Resource_gkv1r"), SubResource("Resource_fb0wf"), SubResource("Resource_v2hxu"), SubResource("Resource_54e8l"), SubResource("Resource_1jyna"), SubResource("Resource_im370"), SubResource("Resource_5q3yt"), SubResource("Resource_ev1ux"), SubResource("Resource_dhjxk"), SubResource("Resource_8ssc4"), SubResource("Resource_yinos"), SubResource("Resource_rku25"), SubResource("Resource_xk0wn"), SubResource("Resource_mfphq"), SubResource("Resource_nb5y8"), SubResource("Resource_o2kty"), SubResource("Resource_ysvoc"), SubResource("Resource_w7h60"), SubResource("Resource_7t2oo"), SubResource("Resource_e1us8"), SubResource("Resource_u4qbj"), SubResource("Resource_10hqt"), SubResource("Resource_favx8"), SubResource("Resource_veavf"), SubResource("Resource_ool3a")])

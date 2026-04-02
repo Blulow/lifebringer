@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnqtrinugocs"]
+
+[ext_resource type="Script" uid="uid://dqyquau44pgs2" path="res://scripts/bullets/bullet_spawner.gd" id="1_nbxsn"]
+[ext_resource type="PackedScene" uid="uid://ckyyefdhel5ew" path="res://scenes/bullets/bullet.tscn" id="2_oc6tw"]
+[ext_resource type="Texture2D" uid="uid://ctl8lk5djixmu" path="res://assets/images/fight_scene/bullet.png" id="3_pgg0s"]
+
+[node name="BulletSpawner" type="Node2D" groups=["bullet_spawner"]]
+script = ExtResource("1_nbxsn")
+bullet_scene = ExtResource("2_oc6tw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.30588236)
+scale = Vector2(0.374, 0.374)
+texture = ExtResource("3_pgg0s")

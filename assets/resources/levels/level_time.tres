@@ -1,0 +1,324 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=50 format=3 uid="uid://dg8jtsnpijnas"]
+
+[ext_resource type="Script" uid="uid://bk5yhl0j0jr1f" path="res://scripts/levels/level_event.gd" id="1_nas6q"]
+[ext_resource type="Script" uid="uid://d2fpfem87jov3" path="res://scripts/levels/level_data.gd" id="2_he543"]
+[ext_resource type="AudioStream" uid="uid://4c7d0jyy0nbk" path="res://assets/sounds/songs/level_time.ogg" id="3_qx2dj"]
+
+[sub_resource type="Resource" id="Resource_vmx7j"]
+script = ExtResource("1_nas6q")
+attack_pattern = "teleporting_attack"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_he543"]
+script = ExtResource("1_nas6q")
+beat = 25
+attack_type = 1
+attack_pattern = "grid_snap"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_qx2dj"]
+script = ExtResource("1_nas6q")
+beat = 33
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_dgba7"]
+script = ExtResource("1_nas6q")
+beat = 33
+attack_pattern = "raining_attack"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_w80nc"]
+script = ExtResource("1_nas6q")
+beat = 41
+attack_type = 1
+attack_pattern = "hitbox_delay"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_6ombu"]
+script = ExtResource("1_nas6q")
+beat = 49
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_olndh"]
+script = ExtResource("1_nas6q")
+beat = 49
+attack_pattern = "merging_bullets"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_fv1w5"]
+script = ExtResource("1_nas6q")
+beat = 57
+attack_type = 1
+attack_pattern = "gravity_switch"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_xk7ah"]
+script = ExtResource("1_nas6q")
+beat = 65
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_m0sl5"]
+script = ExtResource("1_nas6q")
+beat = 65
+attack_pattern = "black_hole"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_hbs0r"]
+script = ExtResource("1_nas6q")
+beat = 73
+attack_type = 1
+attack_pattern = "hitbox_pulse"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_sw3j5"]
+script = ExtResource("1_nas6q")
+beat = 81
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_fwnuk"]
+script = ExtResource("1_nas6q")
+beat = 81
+attack_pattern = "movement_sequence"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_42yuy"]
+script = ExtResource("1_nas6q")
+beat = 89
+attack_type = 1
+attack_pattern = "time_delay"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_twx8e"]
+script = ExtResource("1_nas6q")
+beat = 97
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_e78en"]
+script = ExtResource("1_nas6q")
+beat = 97
+attack_pattern = "hitbox_shift"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_vfvhr"]
+script = ExtResource("1_nas6q")
+beat = 105
+attack_type = 1
+attack_pattern = "force_push"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_mxkmj"]
+script = ExtResource("1_nas6q")
+beat = 113
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_hdli8"]
+script = ExtResource("1_nas6q")
+beat = 113
+attack_pattern = "blinking_rings"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_uweeo"]
+script = ExtResource("1_nas6q")
+beat = 117
+attack_pattern = "raining_attack"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_du2l7"]
+script = ExtResource("1_nas6q")
+beat = 121
+attack_pattern = "merging_bullets"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_iwnyf"]
+script = ExtResource("1_nas6q")
+beat = 125
+attack_pattern = "black_hole"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_r8657"]
+script = ExtResource("1_nas6q")
+beat = 129
+attack_pattern = "movement_sequence"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_a5sos"]
+script = ExtResource("1_nas6q")
+beat = 133
+attack_pattern = "teleporting_attack"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_k386c"]
+script = ExtResource("1_nas6q")
+beat = 137
+attack_pattern = "hitbox_shift"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_dit3v"]
+script = ExtResource("1_nas6q")
+beat = 141
+attack_pattern = "teleporting_attack"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_7132k"]
+script = ExtResource("1_nas6q")
+beat = 145
+attack_type = 1
+attack_pattern = "tempo_warp"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_713k4"]
+script = ExtResource("1_nas6q")
+beat = 147
+event_type = 1
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_6rasb"]
+script = ExtResource("1_nas6q")
+beat = 149
+attack_pattern = "merging_bullets"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_r0muj"]
+script = ExtResource("1_nas6q")
+beat = 157
+attack_type = 1
+attack_pattern = "tempo_warp"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_8labl"]
+script = ExtResource("1_nas6q")
+beat = 159
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_bumam"]
+script = ExtResource("1_nas6q")
+beat = 159
+attack_pattern = "movement_sequence"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_bbca8"]
+script = ExtResource("1_nas6q")
+beat = 167
+attack_type = 1
+attack_pattern = "tempo_warp"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_cufk3"]
+script = ExtResource("1_nas6q")
+beat = 169
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_1qs5s"]
+script = ExtResource("1_nas6q")
+beat = 169
+attack_pattern = "blinking_rings"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_rn2nt"]
+script = ExtResource("1_nas6q")
+beat = 171
+attack_type = 1
+attack_pattern = "tempo_warp"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_opfgs"]
+script = ExtResource("1_nas6q")
+beat = 175
+event_type = 2
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_sk4sd"]
+script = ExtResource("1_nas6q")
+beat = 179
+attack_pattern = "teleporting_attack"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_q5kbd"]
+script = ExtResource("1_nas6q")
+beat = 183
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_7tgvg"]
+script = ExtResource("1_nas6q")
+beat = 191
+attack_type = 1
+attack_pattern = "grid_snap"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_2otf1"]
+script = ExtResource("1_nas6q")
+beat = 199
+attack_type = 1
+attack_pattern = "hitbox_pulse"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_e65mi"]
+script = ExtResource("1_nas6q")
+beat = 207
+attack_type = 1
+attack_pattern = "time_delay"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_wxeau"]
+script = ExtResource("1_nas6q")
+beat = 211
+attack_pattern = "final_round"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_1x5ro"]
+script = ExtResource("1_nas6q")
+beat = 212
+attack_type = 1
+attack_pattern = "final_round"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_nas6q"]
+script = ExtResource("1_nas6q")
+beat = 250
+event_type = 2
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[sub_resource type="Resource" id="Resource_xp45o"]
+script = ExtResource("1_nas6q")
+beat = 250
+event_type = 2
+attack_type = 1
+attack_pattern = "e"
+metadata/_custom_type_script = "uid://bk5yhl0j0jr1f"
+
+[resource]
+script = ExtResource("2_he543")
+song = ExtResource("3_qx2dj")
+bpm = 200.0
+events = Array[ExtResource("1_nas6q")]([SubResource("Resource_vmx7j"), SubResource("Resource_he543"), SubResource("Resource_qx2dj"), SubResource("Resource_dgba7"), SubResource("Resource_w80nc"), SubResource("Resource_6ombu"), SubResource("Resource_olndh"), SubResource("Resource_fv1w5"), SubResource("Resource_xk7ah"), SubResource("Resource_m0sl5"), SubResource("Resource_hbs0r"), SubResource("Resource_sw3j5"), SubResource("Resource_fwnuk"), SubResource("Resource_42yuy"), SubResource("Resource_twx8e"), SubResource("Resource_e78en"), SubResource("Resource_vfvhr"), SubResource("Resource_mxkmj"), SubResource("Resource_hdli8"), SubResource("Resource_uweeo"), SubResource("Resource_du2l7"), SubResource("Resource_iwnyf"), SubResource("Resource_r8657"), SubResource("Resource_a5sos"), SubResource("Resource_k386c"), SubResource("Resource_dit3v"), SubResource("Resource_7132k"), SubResource("Resource_713k4"), SubResource("Resource_6rasb"), SubResource("Resource_r0muj"), SubResource("Resource_8labl"), SubResource("Resource_bumam"), SubResource("Resource_bbca8"), SubResource("Resource_cufk3"), SubResource("Resource_1qs5s"), SubResource("Resource_rn2nt"), SubResource("Resource_opfgs"), SubResource("Resource_sk4sd"), SubResource("Resource_q5kbd"), SubResource("Resource_7tgvg"), SubResource("Resource_2otf1"), SubResource("Resource_e65mi"), SubResource("Resource_wxeau"), SubResource("Resource_1x5ro"), SubResource("Resource_nas6q"), SubResource("Resource_xp45o")])

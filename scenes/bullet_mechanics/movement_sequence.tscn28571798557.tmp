@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dinffc7utnyoy"]
+
+[ext_resource type="Script" uid="uid://bsdogfov7w00e" path="res://scripts/bullet_mechanics/movement_sequence.gd" id="1_asjjy"]
+
+[node name="MovementSequence" type="Node2D"]
+script = ExtResource("1_asjjy")

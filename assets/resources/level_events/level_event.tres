@@ -1,0 +1,6 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://ca0r8lyftxue2"]
+
+[ext_resource type="Script" uid="uid://bk5yhl0j0jr1f" path="res://scripts/levels/level_event.gd" id="1_14x5a"]
+
+[resource]
+script = ExtResource("1_14x5a")

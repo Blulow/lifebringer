@@ -1,0 +1,235 @@
+[gd_scene load_steps=12 format=3 uid="uid://4060clxh862k"]
+
+[ext_resource type="Texture2D" uid="uid://yuyk14lp2ywb" path="res://assets/images/intro&ending/level_selection.png" id="1_4b3o7"]
+[ext_resource type="Script" uid="uid://r5ydio5xmikr" path="res://scripts/level_entry.gd" id="1_ng2bm"]
+[ext_resource type="Texture2D" uid="uid://ctl8lk5djixmu" path="res://assets/images/fight_scene/bullet.png" id="3_57vh3"]
+[ext_resource type="Texture2D" uid="uid://cxif6p1fd48ix" path="res://assets/images/intro&ending/map_pointer.png" id="4_i4n8g"]
+[ext_resource type="FontFile" uid="uid://dummr5547h58d" path="res://assets/fonts/BluFont.ttf" id="5_tnt1e"]
+[ext_resource type="Texture2D" uid="uid://bd2img4o1qif7" path="res://assets/images/fight_scene/arrow_indicator.png" id="6_gpeum"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ts3ki"]
+atlas = ExtResource("4_i4n8g")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tnt1e"]
+atlas = ExtResource("4_i4n8g")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpeum"]
+atlas = ExtResource("4_i4n8g")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f4htt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ts3ki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tnt1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gpeum")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tnt1e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_f4htt"]
+font = ExtResource("5_tnt1e")
+font_size = 32
+
+[node name="LevelEntry" type="Node2D"]
+script = ExtResource("1_ng2bm")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = -504.0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_4b3o7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="LevelEntries" type="Node2D" parent="."]
+
+[node name="LevelEntry" type="Node2D" parent="LevelEntries"]
+
+[node name="Sprite2D" type="Sprite2D" parent="LevelEntries/LevelEntry"]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(282, 419)
+scale = Vector2(5, 3.364)
+texture = ExtResource("3_57vh3")
+
+[node name="LevelEntry2" type="Node2D" parent="LevelEntries"]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="LevelEntries/LevelEntry2"]
+modulate = Color(1, 0, 1, 1)
+position = Vector2(766, 101.99999)
+scale = Vector2(5, 3.364)
+texture = ExtResource("3_57vh3")
+
+[node name="Paths" type="Node2D" parent="LevelEntries/LevelEntry2"]
+
+[node name="Sprite2D" type="Sprite2D" parent="LevelEntries/LevelEntry2/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(368, 372)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="Sprite2D2" type="Sprite2D" parent="LevelEntries/LevelEntry2/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(435, 336)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="Sprite2D3" type="Sprite2D" parent="LevelEntries/LevelEntry2/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(495, 296)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="Sprite2D4" type="Sprite2D" parent="LevelEntries/LevelEntry2/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(555, 265)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="Sprite2D5" type="Sprite2D" parent="LevelEntries/LevelEntry2/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(616, 228)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="Sprite2D6" type="Sprite2D" parent="LevelEntries/LevelEntry2/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(670, 188)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="Sprite2D7" type="Sprite2D" parent="LevelEntries/LevelEntry2/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(713, 148)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="LevelEntry3" type="Node2D" parent="LevelEntries"]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="LevelEntries/LevelEntry3"]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(331, -253.00002)
+scale = Vector2(5, 3.364)
+texture = ExtResource("3_57vh3")
+
+[node name="Paths" type="Node2D" parent="LevelEntries/LevelEntry3"]
+
+[node name="Sprite2D" type="Sprite2D" parent="LevelEntries/LevelEntry3/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(690, 74)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="Sprite2D2" type="Sprite2D" parent="LevelEntries/LevelEntry3/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(620, 65)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="Sprite2D3" type="Sprite2D" parent="LevelEntries/LevelEntry3/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(560, 67)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="Sprite2D4" type="Sprite2D" parent="LevelEntries/LevelEntry3/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(497, 60)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="Sprite2D5" type="Sprite2D" parent="LevelEntries/LevelEntry3/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(439, 40)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="Sprite2D6" type="Sprite2D" parent="LevelEntries/LevelEntry3/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(385, 6)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="Sprite2D7" type="Sprite2D" parent="LevelEntries/LevelEntry3/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(357, -49)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="Sprite2D8" type="Sprite2D" parent="LevelEntries/LevelEntry3/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(337, -117)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="Sprite2D9" type="Sprite2D" parent="LevelEntries/LevelEntry3/Paths"]
+modulate = Color(1, 1, 1, 0.23921569)
+position = Vector2(330, -179)
+scale = Vector2(2, 1.345)
+texture = ExtResource("3_57vh3")
+
+[node name="Pointer" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="Pointer"]
+position = Vector2(286, 366.00003)
+scale = Vector2(7.71875, 7.71875)
+sprite_frames = SubResource("SpriteFrames_f4htt")
+autoplay = "default"
+
+[node name="Selector" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Selector"]
+modulate = Color(0, 0, 0, 0.4862745)
+position = Vector2(282, 419)
+scale = Vector2(5, 3.364)
+texture = ExtResource("3_57vh3")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -281.0
+offset_bottom = 75.0
+grow_horizontal = 0
+text = "Press Z to play selected level
+and   to navigate through the map
+and   to navigate through the levels
+F to fullscreen"
+label_settings = SubResource("LabelSettings_f4htt")
+horizontal_alignment = 2
+
+[node name="ArrowIndicator" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(720, 49)
+texture = ExtResource("6_gpeum")
+
+[node name="ArrowIndicator2" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(793, 39)
+rotation = -3.1415927
+texture = ExtResource("6_gpeum")
+
+[node name="ArrowIndicator3" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(695, 78)
+rotation = -1.5707964
+texture = ExtResource("6_gpeum")
+
+[node name="ArrowIndicator4" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(761, 78)
+rotation = -4.712389
+texture = ExtResource("6_gpeum")

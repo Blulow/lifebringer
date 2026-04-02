@@ -1,0 +1,78 @@
+[gd_scene load_steps=6 format=3 uid="uid://bqfykqm73hmw6"]
+
+[ext_resource type="Script" uid="uid://b07v10scs3fy4" path="res://scripts/ending.gd" id="1_fyrdv"]
+[ext_resource type="FontFile" uid="uid://dummr5547h58d" path="res://assets/fonts/BluFont.ttf" id="1_mqjok"]
+[ext_resource type="Texture2D" uid="uid://culk1ikq58004" path="res://assets/images/lifebringer.png" id="3_2x1jc"]
+[ext_resource type="Texture2D" uid="uid://yuyk14lp2ywb" path="res://assets/images/intro&ending/level_selection.png" id="4_nfmnx"]
+[ext_resource type="Texture2D" uid="uid://mn3h0y22ivmk" path="res://assets/images/intro&ending/level_selection_unfrozen.png" id="5_qa3ag"]
+
+[node name="Ending" type="Node2D"]
+script = ExtResource("1_fyrdv")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 407.0
+offset_top = 200.0
+offset_right = 756.5
+offset_bottom = 454.0
+theme_override_fonts/normal_font = ExtResource("1_mqjok")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "You got all the physics rings and put them back into place"
+autowrap_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 234.0
+offset_top = 75.0
+offset_right = 933.0
+offset_bottom = 583.0
+theme_override_fonts/normal_font = ExtResource("1_mqjok")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "Old man:
+There you are! I knew you could do it...
+You:
+[shake]...[/shake]
+Old man:
+Oh...
+You:
+[shake]...[/shake]
+Old man:
+... Fighting out of place physics, only YOU could do it, is it not?
+Now, let's settle down, shall we?
+I sensed something... or someone coming when the rings were stolen.
+You've done a great job, keeping this world from the perils that would be caused by the missing rings.
+After all, the game is yours."
+scroll_active = false
+autowrap_mode = 2
+visible_characters = 0
+visible_ratio = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="Lifebringer" type="Sprite2D" parent="."]
+position = Vector2(571.00006, 976)
+scale = Vector2(7.1250005, 7.125)
+texture = ExtResource("3_2x1jc")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
+visible = false
+offset_left = 252.0
+offset_right = 900.0
+offset_bottom = 649.0
+texture = ExtResource("5_qa3ag")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+visible = false
+offset_left = 252.0
+offset_right = 900.0
+offset_bottom = 649.0
+texture = ExtResource("4_nfmnx")

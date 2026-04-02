@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://dtrk4nmddxbmx"]
+
+[ext_resource type="PackedScene" uid="uid://cmeewvikx4ksg" path="res://scenes/player.tscn" id="1_p8b18"]
+[ext_resource type="PackedScene" uid="uid://t5d26gkisy2" path="res://scenes/rhythm_controller.tscn" id="2_keksv"]
+[ext_resource type="PackedScene" uid="uid://cr38ffywe6t5o" path="res://scenes/attack_manager.tscn" id="3_nff5x"]
+[ext_resource type="PackedScene" uid="uid://w5wjxl14jj1k" path="res://scenes/attacks/rotating_attack.tscn" id="4_gksjr"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p8b18"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_p8b18")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="Ground" type="StaticBody2D" parent="World"]
+position = Vector2(0, 162)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Ground"]
+shape = SubResource("WorldBoundaryShape2D_p8b18")
+
+[node name="Ceiling" type="StaticBody2D" parent="World"]
+position = Vector2(0, -162)
+rotation = 3.1415927
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Ceiling"]
+shape = SubResource("WorldBoundaryShape2D_p8b18")
+
+[node name="WallLeft" type="StaticBody2D" parent="World"]
+position = Vector2(-288, 0)
+rotation = 1.5707964
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/WallLeft"]
+shape = SubResource("WorldBoundaryShape2D_p8b18")
+
+[node name="WallRight" type="StaticBody2D" parent="World"]
+position = Vector2(288, 0)
+rotation = -1.5707964
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/WallRight"]
+shape = SubResource("WorldBoundaryShape2D_p8b18")
+
+[node name="RhythmController" parent="." instance=ExtResource("2_keksv")]
+position = Vector2(-128.5636, -18.17096)
+
+[node name="AttackManager" parent="." instance=ExtResource("3_nff5x")]
+
+[node name="RotatingAttack" parent="AttackManager" instance=ExtResource("4_gksjr")]
+
+[connection signal="beat" from="RhythmController" to="AttackManager/RotatingAttack" method="_on_beat"]

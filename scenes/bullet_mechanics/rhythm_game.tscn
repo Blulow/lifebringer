@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://jwbmihhwux1o"]
+
+[ext_resource type="Script" uid="uid://cerylgqd384ou" path="res://scripts/bullet_mechanics/rhythm_game.gd" id="1_5cu6u"]
+[ext_resource type="FontFile" uid="uid://dummr5547h58d" path="res://assets/fonts/BluFont.ttf" id="2_5cu6u"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yd70q"]
+font = ExtResource("2_5cu6u")
+font_size = 64
+font_color = Color(1, 0, 0, 1)
+
+[node name="RhythmGame" type="Node2D"]
+script = ExtResource("1_5cu6u")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -81.5
+offset_top = -23.0
+offset_right = 81.5
+grow_horizontal = 2
+grow_vertical = 0
+text = "Run OUT OF the RED!"
+label_settings = SubResource("LabelSettings_yd70q")
